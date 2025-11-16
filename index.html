@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Blog</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <h1>📝 My Simple Blog</h1>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="container">
+        <main>
+            <div class="search-bar">
+                <input type="text" id="searchInput" placeholder="Search posts...">
+                <button id="searchBtn">🔍 Search</button>
+            </div>
+
+            <div id="postsContainer" class="posts-grid">
+                <!-- Posts will be dynamically loaded here -->
+            </div>
+        </main>
+
+        <aside>
+            <section id="about" class="sidebar-section">
+                <h3>About Me</h3>
+                <p>Welcome to my blog! I share thoughts on nature, technology, and travel. Join me on this journey of discovery.</p>
+            </section>
+
+            <section id="contact" class="sidebar-section">
+                <h3>Contact</h3>
+                <form id="contactForm">
+                    <input type="text" id="name" placeholder="Your Name" required>
+                    <input type="email" id="email" placeholder="Your Email" required>
+                    <textarea id="message" placeholder="Your Message" rows="4" required></textarea>
+                    <button type="submit">Send Message</button>
+                </form>
+                <div id="contactMessage"></div>
+            </section>
+
+            <section class="sidebar-section">
+                <h3>Recent Tags</h3>
+                <div id="tagsContainer" class="tags">
+                    <!-- Tags will be loaded here -->
+                </div>
+            </section>
+        </aside>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 My Simple Blog | All Rights Reserved</p>
+        <div class="social-links">
+            <a href="#" title="Twitter">🐦</a>
+            <a href="#" title="Facebook">📘</a>
+            <a href="#" title="Instagram">📷</a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
